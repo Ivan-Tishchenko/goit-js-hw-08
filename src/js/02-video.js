@@ -10,8 +10,8 @@ player.on('timeupdate', () => {
 }).catch(function(error) {})
 })
 
-
-player.on('play', function () {
+document.addEventListener("DOMContentLoaded", function () {
     player.setCurrentTime(localStorage.getItem("videoplayer-current-time") ? localStorage.getItem("videoplayer-current-time") : 0);
-    });
+    })
+
 
